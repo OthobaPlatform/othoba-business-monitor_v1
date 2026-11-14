@@ -1,0 +1,9 @@
+backend/config.json
+backend/data/*
+!backend/data/README.md
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.log
+node_modules/
+.openai/

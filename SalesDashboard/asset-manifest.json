@@ -1,0 +1,18 @@
+{
+  "files": {
+    "packed.js": "static/js/packed.410b4b89f97a.js",
+    "engine.js": "static/js/engine.567ec601bb7d.js",
+    "worker.js": "static/js/worker.c10c49384fd7.js",
+    "main.js": "static/js/main.741755947494.js",
+    "main.css": "static/css/main.99f90bf78230.css",
+    "index.html": "index.html",
+    "app-config.js": "app-config.js"
+  },
+  "entrypoints": [
+    "static/css/main.99f90bf78230.css",
+    "static/js/packed.410b4b89f97a.js",
+    "static/js/engine.567ec601bb7d.js",
+    "static/js/worker.c10c49384fd7.js",
+    "static/js/main.741755947494.js"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "short_name": "Performance HQ",
+  "name": "Othoba Performance HQ",
+  "icons": [
+    {
+      "src": "othobalogocircle.png",
+      "sizes": "392x386",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#439ddf",
+  "background_color": "#f2f6fa"
+}

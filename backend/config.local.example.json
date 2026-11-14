@@ -1,0 +1,17 @@
+{
+  "host": "127.0.0.1",
+  "port": 3011,
+  "publicOrigin": "http://localhost:3011",
+  "trustProxy": false,
+  "secureCookies": false,
+  "dataDir": "./data",
+  "sessionHours": 8,
+  "maxCsvMB": 20,
+  "maxBackupMB": 256,
+  "autoBackupHours": 24,
+  "backupRetentionDays": 14,
+  "maxPreviewBatches": 8,
+  "previewMinutes": 60,
+  "seedIncludedReports": false,
+  "maxPreviewMB": 512
+}

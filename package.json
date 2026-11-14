@@ -1,0 +1,19 @@
+{
+  "name": "othoba-performance-server-package",
+  "version": "2.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node backend/server.mjs",
+    "dev": "node backend/server.mjs",
+    "setup": "node backend/setup.mjs",
+    "build": "node scripts/build-frontend.mjs",
+    "test": "node --test tests/server.test.mjs",
+    "create-user": "node backend/setup.mjs --add-user",
+    "backup": "node backend/backup.mjs",
+    "users": "node backend/manage-user.mjs",
+    "diagnose": "node scripts/diagnose.mjs"
+  },
+  "engines": {
+    "node": ">=24.14.0 <25"
+  }
+}

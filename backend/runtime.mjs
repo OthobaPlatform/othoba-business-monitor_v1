@@ -1,0 +1,3 @@
+import vm from 'node:vm';import fs from 'node:fs';import {webcrypto} from 'node:crypto';
+const sources=['packed.cjs','engine.cjs','worker.js'].map(n=>fs.readFileSync(new URL('./shared/'+n,import.meta.url),'utf8'));
+export async function createRuntime(payload,options={}){const ctx=vm.createContext({...options,TextEncoder,TextDecoder,atob,btoa,Uint8Array,Uint16Array,Uint32Array,Int32Array,Float64Array,DataView,ArrayBuffer,Set,Map,WeakMap,Proxy,Date,Math,JSON,Number,Object,performance,crypto:webcrypto,CompressionStream,DecompressionStream,ReadableStream,Blob,Response,File});for(let code of sources)vm.runInContext(code,ctx,{timeout:30000});await ctx.runWorkerTask('load',{payload});return {ctx,call:(type,payload={})=>ctx.runWorkerTask(type,payload)};}
